@@ -439,8 +439,8 @@ window.onload = function () {
           var Counter = AV.Object.extend(className);
           var query = new AV.Query(className);
           var $target = document.querySelector("#post .hits");
-          var url = $target.getAttribute("data-leadcloud-url");
-          var title = $target.getAttribute("data-leadcloud-title").trim();
+          var url = $target.getAttribute("data-leancloud-url");
+          var title = $target.getAttribute("data-leancloud-title").trim();
           query.equalTo("url", url);
           query.find().then(function (results) {
             if (results.length > 0) {
